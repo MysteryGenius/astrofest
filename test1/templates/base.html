@@ -26,9 +26,14 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
+
         {% wagtailuserbar %}
 
+        {% include "partials/header.html" %}
+
         {% block content %}{% endblock %}
+
+        {% include "partials/footer.html" %}
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/test1.js' %}"></script>
