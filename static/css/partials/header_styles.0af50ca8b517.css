@@ -1,0 +1,14 @@
+ul {
+	display: flex !important;
+	flex-flow: row wrap !important;
+}
+
+ul li {
+	margin: 1em 2em !important;
+	list-style: none !important;	
+}
+
+ul li a {
+	text-decoration: none !important;
+
+}

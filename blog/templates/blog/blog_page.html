@@ -5,20 +5,26 @@
 {% block body_class %}template-blogpage{% endblock %}
 
 {% block content %}
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date }}</p>
 
-    <div class="intro">{{ page.intro }}</div>
+    <div class="blogpost-container">
+        <h1 class="blogpost-title">
+            {{ page.title }}
+            </br>
+            <span class="meta blogpost-date">{{ page.date }}</span>
+        </h1>
 
-    {{ page.body|richtext }}
+        <div class="intro">{{ page.intro }}</div>
 
-    {% for item in page.gallery_images.all %}
-        <div style="float: left; margin: 10px">
-            {% image item.image fill-320x240 %}
-            <p>{{ item.caption }}</p>
-        </div>
-    {% endfor %}
+        {{ page.body|richtext }}
 
-    <p><a href="{{ page.get_parent.url }}">Return to blog</a></p>
+        {% for item in page.gallery_images.all %}
+            <div>
+                {% image item.image fill-320x240 %}
+                <p>{{ item.caption }}</p>
+            </div>
+        {% endfor %}
+
+        <p class="return-to-blog"><a href="{{ page.get_parent.url }}">Return to blog</a></p>
+    </div>
 
 {% endblock %}

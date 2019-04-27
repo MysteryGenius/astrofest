@@ -1,0 +1,11 @@
+body {
+	background: url("../images/12.9e5b226d1fce.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main {
+	background-color: transparent;
+}
