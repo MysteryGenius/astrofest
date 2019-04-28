@@ -9,7 +9,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;*/
 	font-family: 'Open Sans', sans-serif;
-	/*background-color: #2b4870;*/
+	background-color: #2b4870;
 	background-color: #EFEFEF;
 }
 
@@ -78,9 +78,10 @@ nav ul a:hover::after {
 .blogindex-post {
 	width: 75vw;
 	box-sizing: border-box;
-	padding: 1em
-;	background-color: #FFE979;
+	padding: 1em;
+	background-color: #9e0000;
 	border: black 2px solid;
+	color: white;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	margin: 0.5em;
 	text-align: center;
@@ -92,8 +93,10 @@ nav ul a:hover::after {
 
 .blogindex-post a {
 	display: inline-block;
-	background-color: #FFFADF;
+	background-color: #fde06a;
 	border-radius: 1.5em;
+
+	border: solid #670505 2px;
 	padding: 0.5em 1em;
 	text-decoration: none;
 	color: black;
