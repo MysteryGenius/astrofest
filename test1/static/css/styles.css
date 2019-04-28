@@ -3,14 +3,10 @@
 /*emphasis bgc: #FFE979*/
 
 body {
-	/*background: url("../images/12.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;*/
 	font-family: 'Open Sans', sans-serif;
 	background-color: #2b4870;
 	background-color: #EFEFEF;
+	margin: 0;
 }
 
 h2, h3, h4, h5, h6 {
@@ -28,7 +24,20 @@ h2, h3, h4, h5, h6 {
 
 
 
-/*NAVIGAtiON*/
+/*NAVIGATION*/
+nav {
+	background-color: #fff;
+	padding: 1em;
+	margin-bottom: 1em;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 nav ul {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -37,7 +46,7 @@ nav ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding: 0;
+	margin: 0;
 }
 
 nav ul li {
@@ -64,6 +73,11 @@ nav ul a:hover::after {
 	width: 100%;
 }
 
+.logo {
+	font-size: 2em;
+	text-decoration: none;
+	color: black;
+}
 
 /*BLOG INDEX*/
 
@@ -95,7 +109,6 @@ nav ul a:hover::after {
 	display: inline-block;
 	background-color: #fde06a;
 	border-radius: 1.5em;
-
 	border: solid #670505 2px;
 	padding: 0.5em 1em;
 	text-decoration: none;
@@ -103,8 +116,8 @@ nav ul a:hover::after {
 }
 
 .blogindex-post a:hover {
-	color: #FFFADF;
-	background-color: black;
+	color: black;
+	background-color: #EFEFEF;
 }
 
 .blogindex-post .rich-text p, .blogindex-post .rich-text h2, h3, h4, h5 {
@@ -162,8 +175,16 @@ footer {
 	text-align: center;
 }
 
+
+
+/*MEDIA QUERIES*/
 @media only screen and (max-width: 600px) {
 	.blogpost-container {
 		width: 85vw;
-	}	
+	}
+
+	.blogpost-container img {
+		width: 80%;
+		object-fit: contain;
+	}
 }
